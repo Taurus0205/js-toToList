@@ -18,6 +18,13 @@ elForm.addEventListener("submit", function (evt) {
   todo_list.appendChild(newLi);
   newLi.appendChild(newSpan);
   newLi.appendChild(newBtn);
-  newSpan.textContent = userInput;
+
+  if (userInput === " ") {
+    console.log("xato");
+    return;
+  } else {
+    console.log("good");
+    newSpan.textContent = userInput;
+  }
   elInput.value = null;
 });
