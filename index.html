@@ -4,8 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="todo-wrapper container-small mt-5">
+      <form class="todo-form">
+        <input
+          autocomplete="off"
+          class="todo-input form-control"
+          type="text"
+          name="todo"
+          placeholder="your chores"
+        />
+        <!-- <button class="todo-btn" type="submit">submit</button> -->
+
+        <ul class="todo-list" id="todo_list">
+          <!-- <li class="todo-item">
+            <span>salom</span>
+            <button class="todo-item__btn">Delete</button>
+          </li> -->
+        </ul>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
